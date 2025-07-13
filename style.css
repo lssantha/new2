@@ -1,0 +1,36 @@
+body {
+  font-family: Arial, sans-serif;
+  background: #f2f2f2;
+  text-align: center;
+  padding-top: 50px;
+}
+
+.container {
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+button {
+  background-color: #007bff;
+  color: white;
+  padding: 20px 40px;       /* Increased padding */
+  border: none;
+  border-radius: 10px;      /* Slightly larger radius */
+  font-size: 44px;          /* Larger text */
+  cursor: pointer;
+  transition: background 0.3s ease;
+  min-width: 440px;         /* Optional: ensures wide button */
+  min-height: 140px;         /* Optional: makes it taller */
+}
+
+
+button:hover {
+  background-color: #0056b3;
+}
+
+video {
+  margin-top: 30px;
+  max-width: 100%;
+  border: 2px solid #333;
+  border-radius: 8px;
+}
