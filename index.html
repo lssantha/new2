@@ -1,59 +1,102 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Watch Video</title>
-  <link rel="stylesheet" href="style.css" />
-	<!--<script type='text/javascript' src='//pl27151493.profitableratecpm.com/29/09/7e/29097e714b74636efbd19d2cf4b9679c.js'></script>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Watch Video</title>
+    <link rel="stylesheet" href="style.css" />
+    <!--<script type='text/javascript' src='//pl27151493.profitableratecpm.com/29/09/7e/29097e714b74636efbd19d2cf4b9679c.js'></script>
 -->
-</head>
-<body>
+  </head>
+  <body>
+    <script type="text/javascript">
+      atOptions = {
+        key: "8240c59ae61a0b498b98ac75db068acc",
+        format: "iframe",
+        height: 90,
+        width: 728,
+        params: {},
+      };
+    </script>
+    <script
+      type="text/javascript"
+      src="//www.highperformanceformat.com/8240c59ae61a0b498b98ac75db068acc/invoke.js"
+    ></script>
 
-<script type="text/javascript">
-	atOptions = {
-		'key' : '8240c59ae61a0b498b98ac75db068acc',
-		'format' : 'iframe',
-		'height' : 90,
-		'width' : 728,
-		'params' : {}
-	};
-</script>
-<script type="text/javascript" src="//www.highperformanceformat.com/8240c59ae61a0b498b98ac75db068acc/invoke.js"></script>
-  
-  <div class="container">
-  <button id="watchBtn">Click Here to Watch Video</button>
-  <h1 id="instruction">බොත්තම ක්ලික් කරන්න. පළමු ක්ලික් කිරීමේදීම, නව ටැබ් එකක දැන්වීමක් විවෘත වේ. දැන්වීම් ටැබය වසා දැමීමෙන් පසු, වීඩියෝව නැරඹීමට නැවත බොත්තම ක්ලික් කරන්න.</h1>
-  <div class="video-wrapper" id="videoWrapper" style="display: none;">
-    <video id="mainVideo" width="640" controls controlsList="nodownload" oncontextmenu="return false;">
-      <source src="video.mp4" type="video/mp4" />
-      Your browser does not support the video tag.
-    </video>
-  </div>
-</div>
+    <div class="container">
+      <button id="watchBtn">Click Here to Watch Video</button>
+      <h1 id="instruction">
+        බොත්තම ක්ලික් කරන්න. පළමු ක්ලික් කිරීමේදීම, නව ටැබ් එකක දැන්වීමක් විවෘත
+        වේ. දැන්වීම් ටැබය වසා දැමීමෙන් පසු, වීඩියෝව නැරඹීමට නැවත බොත්තම ක්ලික්
+        කරන්න.
+      </h1>
+      <div class="video-wrapper" id="videoWrapper" style="display: none">
+        <video
+          id="mainVideo"
+          width="640"
+          controls
+          controlsList="nodownload"
+          oncontextmenu="return false;"
+        >
+          <source src="video.mp4" type="video/mp4" />
+          Your browser does not support the video tag.
+        </video>
+      </div>
+    </div>
 
-<script>
-  let clicked = false;
-  document.getElementById("watchBtn").addEventListener("click", function () {
-    if (!clicked) {
-      // First click – open ad in new tab
-      window.open("https://www.profitableratecpm.com/jh9ri3zda4?key=5f1f19d4475661693e01257b33a89296", "_blank");
-      clicked = true;
-    } else {
-      // Second click – show video and hide button + instruction
-      document.getElementById("videoWrapper").style.display = "block";
-      this.style.display = "none";
-      document.getElementById("instruction").style.display = "none"; // Hide instruction
-      document.getElementById("mainVideo").play();
-    }
-  });
-</script>
+    <script>
+      let clickCount = 0;
+      const adLinks = [
+        "https://www.effectivegatecpm.com/jg38vpvnj1?key=86403a2763a08f8fe1c7248c18138ac1",
+        "https://www.effectivegatecpm.com/fzrpbqrzxn?key=68a7a7ba0fa01151f92982f1535deedd",
+        "https://www.effectivegatecpm.com/x32fgu85t?key=3c4d8814c0fb33acc6ee01a2d8819200",
+        "https://www.effectivegatecpm.com/ydqxnqkiy?key=bb2d54ebcadb5d85c53ee433e32ae60b",
+        "https://www.effectivegatecpm.com/n9z4juap3k?key=6b634b24edacd1382486f8c4d5853554",
+        "https://www.effectivegatecpm.com/g530whwfz?key=0192b3638decd14b944c20ca15eb8979",
+        "https://www.effectivegatecpm.com/x32fgu85t?key=3c4d8814c0fb33acc6ee01a2d8819200",
+        "https://www.effectivegatecpm.com/fzrpbqrzxn?key=68a7a7ba0fa01151f92982f1535deedd",
+        "https://www.effectivegatecpm.com/jg38vpvnj1?key=86403a2763a08f8fe1c7248c18138ac1",
+        "https://www.effectivegatecpm.com/n9z4juap3k?key=6b634b24edacd1382486f8c4d5853554",
+      ];
+      // Convert Google Drive link to preview-only mode (prevents easy downloading)
+      const googleDriveFileId = "1xIDFp3bAqtap8H4ibWETAB71dzpRL0Xf";
+      const googleDriveLink = `https://drive.google.com/file/d/${googleDriveFileId}/preview`;
 
-<script async="async" data-cfasync="false" src="//pl27151424.profitableratecpm.com/f29a53b6b88cc137a5ae7e69c2e7cd2b/invoke.js"></script>
-<div id="container-f29a53b6b88cc137a5ae7e69c2e7cd2b"></div>
+      document
+        .getElementById("watchBtn")
+        .addEventListener("click", function () {
+          clickCount++;
 
-	<!--<script type='text/javascript' src='//pl27151532.profitableratecpm.com/9a/3a/f6/9a3af67d2a86a6249dcd9226027fb8f7.js'></script>
+          if (clickCount <= 10) {
+            // First 10 clicks – open ads in new tab
+            window.open(adLinks[clickCount - 1], "_blank");
+
+            // Update button text to show progress
+            if (clickCount < 10) {
+              this.textContent = `Click Here to Watch Video (${clickCount}/10 ads)`;
+            } else {
+              this.textContent = "Click One More Time to Watch Video!";
+            }
+          } else {
+            // 11th click – open Google Drive video link
+            window.open(googleDriveLink, "_blank");
+
+            // Hide button and instruction
+            this.style.display = "none";
+            document.getElementById("instruction").style.display = "none";
+          }
+        });
+    </script>
+
+    <script
+      async="async"
+      data-cfasync="false"
+      src="//pl27151424.profitableratecpm.com/f29a53b6b88cc137a5ae7e69c2e7cd2b/invoke.js"
+    ></script>
+    <div id="container-f29a53b6b88cc137a5ae7e69c2e7cd2b"></div>
+
+    <!--<script type='text/javascript' src='//pl27151532.profitableratecpm.com/9a/3a/f6/9a3af67d2a86a6249dcd9226027fb8f7.js'></script>
 social banner-->
-	
-</body>
+  </body>
 </html>
+
