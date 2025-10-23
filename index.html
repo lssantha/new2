@@ -31,16 +31,15 @@
         කරන්න.
       </h1>
       <div class="video-wrapper" id="videoWrapper" style="display: none">
-        <video
+        <iframe
           id="mainVideo"
-          width="640"
-          controls
-          controlsList="nodownload"
-          oncontextmenu="return false;"
-        >
-          <source src="video.mp4" type="video/mp4" />
-          Your browser does not support the video tag.
-        </video>
+          width="100%"
+          height="480"
+          src=""
+          frameborder="0"
+          allow="autoplay"
+          allowfullscreen
+        ></iframe>
       </div>
     </div>
 
@@ -58,9 +57,6 @@
         "https://www.effectivegatecpm.com/jg38vpvnj1?key=86403a2763a08f8fe1c7248c18138ac1",
         "https://www.effectivegatecpm.com/n9z4juap3k?key=6b634b24edacd1382486f8c4d5853554",
       ];
-      // Convert Google Drive link to preview-only mode (prevents easy downloading)
-      const googleDriveFileId = "1xIDFp3bAqtap8H4ibWETAB71dzpRL0Xf";
-      const googleDriveLink = `https://drive.google.com/file/d/${googleDriveFileId}/preview`;
 
       document
         .getElementById("watchBtn")
@@ -78,8 +74,12 @@
               this.textContent = "Click One More Time to Watch Video!";
             }
           } else {
-            // 11th click – open Google Drive video link
-            window.open(googleDriveLink, "_blank");
+            // 11th click – show embedded Google Drive video
+            const googleDriveFileId = "1xIDFp3bAqtap8H4ibWETAB71dzpRL0Xf";
+            const embedUrl = `https://drive.google.com/file/d/${googleDriveFileId}/preview`;
+
+            document.getElementById("mainVideo").src = embedUrl;
+            document.getElementById("videoWrapper").style.display = "block";
 
             // Hide button and instruction
             this.style.display = "none";
@@ -99,4 +99,3 @@
 social banner-->
   </body>
 </html>
-
